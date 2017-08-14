@@ -511,8 +511,8 @@ section h3 {
             }
             
             #myFooter .fa-facebook:hover,
-            #myFooter .fa-google-plus:hover,
-            #myFooter .fa-twitter:hover {
+            #myFooter .fa-instagram:hover,
+            #myFooter .fa-twitch:hover {
                 border: 1px solid transparent;
                 background-color: #833AB1;
                 background-image: -webkit-gradient(linear, left top, left bottom, from(#833AB1), to(#6160C9));
