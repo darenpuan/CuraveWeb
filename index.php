@@ -42,14 +42,10 @@ if (!$errEmail) {
 -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Exo+2:100,400" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/custom.css">
         <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/index.css">
         <title>Curave</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-
     </head>
 
     <body>
@@ -207,7 +203,7 @@ if (!$errEmail) {
                             <a href="#" class="social-icons"><i class="fa fa-twitch"></i></a>
                         </div>
                         <div class="hidden-sm hidden-xs">
-                            <form action="index.php" method="post" class="form-inline">
+                            <form action="#" method="post" class="form-inline">
                                 <div class="input-group">
                                     <p>Get the latest scoop! Sign up for our newsletter today!</p>
                                     <label for="email" class="sr-only">Email</label>
@@ -224,7 +220,8 @@ if (!$errEmail) {
                                 <div class="input-group">
                                     <p>Get the latest scoop! Sign up for our newsletter today!</p>
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" placeholder="Email Address" class="form-control" id="email">
+                                    <input type="email" placeholder="Email Address" class="form-control" id="email" required value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                                    <?php echo "<p class='text-danger'>$errEmail</p>";?>
                                     <span class="input-group">
                             <button name="submit" type="submit" value="Submit"><i class="fa fa-send"></i></button>
                             </span>
@@ -240,5 +237,9 @@ if (!$errEmail) {
         </footer>
         <!--End footer-->
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
     </html>
