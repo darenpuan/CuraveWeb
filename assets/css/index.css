@@ -1,0 +1,128 @@
+/*Hero*/
+
+#hero {
+    background: url(/assets/img/sample-video-min.jpg) no-repeat fixed;
+    background-size: cover;
+    min-height: 100%;
+    background-position: top;
+    text-align: center;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+}
+
+
+}
+#hero .container {
+    margin-top: 8%;
+}
+@media screen and (min-width:768px) {
+    #hero .container {
+        margin-top: 8%;
+    }
+    
+    .dotaLogo {
+        border-right: 1px solid;
+    }
+}
+@media screen and (max-width:767px) {
+    .dotaLogo {
+        border-bottom: 1px solid;
+    }
+}
+#hero .row {
+    margin: 0 auto;
+    display: table;
+    margin-top: 10%;
+}
+.dotaLogo,
+.overwatchLogo {
+    background-color: white;
+    height: 100px;
+    width: 230px;
+    padding: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.dotaLogo p,
+.overwatchLogo p {
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    margin: 0px;
+}
+
+/*howItWorks*/
+#howItWorks {
+    background-color: #17191d;
+    background-size: cover;
+    min-height: 100%;
+    text-align: center;
+}
+#howItWorks .section-header {
+    margin-top: 7%;
+}
+#howItWorks .row {
+    margin-top: 100px;
+}
+.img-circle {
+    text-align: center;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #833AB1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#833AB1), to(#6160C9));
+    background-image: -webkit-linear-gradient(top, #833AB1, #6160C9);
+    background-image: -moz-linear-gradient(top, #833AB1, #6160C9);
+    background-image: -ms-linear-gradient(top, #833AB1, #6160C9);
+    background-image: -o-linear-gradient(top, #833AB1, #6160C9);
+    background-image: linear-gradient(to bottom left, #833AB1, #6160C9);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#833AB1, endColorstr=#6160C9);
+}
+.img-circle img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    margin-top: -25%;
+    /* Half the height */
+    
+    margin-left: -100%;
+    /* Half the width */
+}
+#howItWorks p {
+    color: white;
+    padding-bottom: 20px;
+}
+
+/*whyCurave*/
+#whyCurave {
+    background: url(/assets/img/background2000px-min.jpg) no-repeat;
+    min-height: 115%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#whyCurave .section-header {
+    margin-top: 7%;
+}
+#whyCurave .row {
+    margin-top: 100px;
+}
+#whyCurave .col-sm-4 .col-md-12 {
+    background: rgba(42, 45, 65, 0.6);
+    margin: 20px;
+    padding: 20px;
+}
+#whyCurave p {
+    color: white;
+    font-size: 14px;
+}
