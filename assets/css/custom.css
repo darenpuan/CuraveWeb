@@ -439,6 +439,9 @@ section h3 {
     background-repeat: no-repeat;
     background-position: center;
 }
+#whyCurave .section-header {
+    margin-top: 7%;
+}
 #whyCurave .row {
     margin-top: 100px;
 }
