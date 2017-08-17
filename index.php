@@ -13,9 +13,9 @@
         $headers .= 'From: <form@curave.com.sg>' . "\r\n";
         $headers .= 'Cc: gohjh@curave.com' . "\r\n";
 		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+		/*if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 			$errEmail = 'Please enter a valid email address';
-		}
+		}*/
 // If there are no errors, send the email
 if (!$errEmail) {
 	if (mail ($to, $subject, $body, $headers)) {
