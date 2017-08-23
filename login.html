@@ -6,6 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="1056910213503-u6d6vv7b2od2q2q299gc9lju35r7dkao.apps.googleusercontent.com ">
+
     <!--
     <meta name="description" content="">
     <meta name="author" content="">
@@ -16,10 +18,25 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
     <title>Curave</title>
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1492694241032394";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
     <!--header-->
     <header class="site-header" role="banner">
         <div class="navbar-wrapper">
@@ -32,15 +49,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#hero"><img src="assets/img/logo-min.png" alt="Curave"></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/logo-min.png" alt="Curave"></a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="">
                         <ul class="nav navbar-nav">
                             <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#howItWorks">HOW IT WORKS</a></li>
+                            <li><a href="index.html #howItWorks">HOW IT WORKS</a></li>
                             <li><a href="#competitions">VIEW COMPETITIONS</a></li>
-                            <li><a href="#login" class="btn button_login padding">LOGIN</a></li>
-                            <li><a href="#register" class="btn button_register">REGISTER</a></li>
+                            <li><a href="login.html" class="btn button_login padding">LOGIN</a></li>
+                            <li><a href="register.html" class="btn button_register">REGISTER</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,18 +69,70 @@
     <section id="hero">
         <div class="container">
             <div class="section-header">
-                <h1>EARN MONEY</h1>
-                <h1><small>PLAYING YOUR FAVORITE GAMES</small></h1>
-                <h4>PLAY COMPETITIONS. WIN GAMES. EARN REAL CASH</h4>
+                <h2>LOGIN</h2>
             </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-sm-6 dotaLogo">
-                    <img src="/assets/img/logo-dota2-min.png " alt=" ">
+            <div class="row">
+                <div class="login col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <form method="post" style="text-align: center;">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" name="user" placeholder="email address" required="required" class="input-txt" />
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-key"></i>
+                            <input type="password" name="password" placeholder="password" required="required" class="input-txt" />
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 rememberMe">
+                                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" class="pull-left chkBox">
+                                <label for="rememberMe">Keep me logged in</label>
+
+                            </div>
+                            <div class="col-md-6 forgetPw">
+                                <a href="forgotPw.html" class="forgetPw">
+                            Forgot Password?
+                        </a>
+                            </div>
+                        </div>
+                        <div class="login-footer">
+                            <button type="submit" class="btn button_login2">LOGIN</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-sm-6 overwatchLogo">
-                    <img src="/assets/img/logo-overwatch-min.png " alt=" ">
-                    <p>COMING SOON</p>
+                <div class="divider col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <hr class="left" />OR
+                    <hr class="right" />
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 fb">
+                        <div class="fb-login-button" data-width="240" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 google">
+                        <div id="my-signin2"></div>
+                        <script>
+                            function onSuccess(googleUser) {   
+                                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());  
+                            }  
+                            function onFailure(error) {   
+                                console.log(error);  
+                            }  
+                            function renderButton() {   
+                                gapi.signin2.render('my-signin2', {    
+                                    'scope': 'profile email',
+                                        'width': 240,
+                                        'height': 40,
+                                        'longtitle': true,
+                                        'theme': 'dark',
+                                        'onsuccess': onSuccess,
+                                        'onfailure': onFailure   
+                                });  
+                            }
+
+                        </script>
+                    </div>
                 </div>
+            </div>
+
+            <div class="signup">
+                <a href="register.html">I don't have an account</a>
             </div>
         </div>
     </section>
@@ -140,4 +209,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
 </html>
