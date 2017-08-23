@@ -16,7 +16,6 @@
 
 #hero .container {
     margin-top: 8%;
-    height: 400px;
 }
 
 @media screen and (min-width:768px) {
@@ -28,6 +27,14 @@
 #hero .row {
     margin: 0 auto;
     display: table;
+}
+
+#hero p {
+    color: white;
+    max-width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .form-group {
@@ -42,8 +49,7 @@
     color: #999;
 }
 
-.fa-user,
-.fa-key {
+.fa-user {
     font-size: 22px;
     padding-left: 10px;
     background: -webkit-linear-gradient(#833AB1, #6160C9);
@@ -72,120 +78,7 @@
     border-bottom: linear-gradient(to bottom left, #833AB1 0%, #833AB1 50%, #6160C9 51%, #6160C9 100%);
 }
 
-.rememberMe {
-    float: left;
-    color: #fff;
-    text-align: left;
-    font-style: normal;
-}
-
-#hero label {
-    font-weight: normal;
-}
-
-
-/* Base for label styling */
-
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-    position: absolute;
-    left: -9999px;
-}
-
-[type="checkbox"]:not(:checked)+label,
-[type="checkbox"]:checked+label {
-    position: relative;
-    padding-left: 1.95em;
-    cursor: pointer;
-}
-
-
-/* checkbox aspect */
-
-[type="checkbox"]:not(:checked)+label:before,
-[type="checkbox"]:checked+label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.45em;
-    height: 1.45em;
-    border: 1px solid #ccc;
-    background: transparent;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .1);
-}
-
-
-/* checked mark aspect */
-
-[type="checkbox"]:not(:checked)+label:after,
-[type="checkbox"]:checked+label:after {
-    content: '✔';
-    position: absolute;
-    top: .2em;
-    left: .2em;
-    font-size: 1.1em;
-    line-height: 0.8;
-    background: -webkit-linear-gradient(#833AB1, #6160C9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all .2s;
-}
-
-
-/* checked mark aspect changes */
-
-[type="checkbox"]:not(:checked)+label:after {
-    opacity: 0;
-    transform: scale(0);
-}
-
-[type="checkbox"]:checked+label:after {
-    opacity: 1;
-    transform: scale(1);
-}
-
-
-/* disabled checkbox */
-
-[type="checkbox"]:disabled:not(:checked)+label:before,
-[type="checkbox"]:disabled:checked+label:before {
-    box-shadow: none;
-    border-color: #bbb;
-    background-color: #ddd;
-}
-
-[type="checkbox"]:disabled:checked+label:after {
-    color: #999;
-}
-
-[type="checkbox"]:disabled+label {
-    color: #aaa;
-}
-
-.login-footer {
-    margin: 10px 0;
-    overlow: hidden;
-    float: left;
-    width: 100%;
-}
-
-.forgetPw {
-    float: right;
-}
-
-.forgetPw a {
-    color: white;
-}
-
-@media screen and (max-width:378px) {
-    .forgetPw {
-        float: left;
-    }
-}
-
-.button_login2 {
+.button_login3 {
     border: 1px solid #642c87;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -193,6 +86,7 @@
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     padding: 15px 40px 15px 40px;
+    margin: 20px 0;
     text-decoration: none;
     display: inline-block;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
@@ -208,7 +102,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#833AB1, endColorstr=#6160C9);
 }
 
-.button_login2:hover {
+.button_login3:hover {
     border: 1px solid #4a2164;
     color: #FFFFFF;
     background-color: #672d8b;
@@ -221,66 +115,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#672d8b, endColorstr=#403eb8);
 }
 
-.divider {
-    max-width: 800px;
-    text-align: center;
+.login a {
     color: white;
-    margin-top: 30px;
-}
-
-.divider hr {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin-bottom: 30px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.signup {
-    margin-top: 40px;
-}
-
-.signup a {
-    color: white;
-}
-
-
-/*
-#my-signin2 {
-    margin-left: 20px;
-}
-@media screen and (max-width:768px) {
-    .fb-login-button,
-    #my-signin2 {
-        float: left;
-    }
-    
-    #my-signin2 {
-        margin-left: 0px;
-    }
-    
-    .fb,
-    .google {
-        padding: 0px;
-    }
-}
-*/
-
-@media screen and (max-width:768px) {
-    .fb {
-        padding: 0px;
-    }
-}
-
-@media screen and (max-width:301px) {
-    .divider {
-        margin-left: 0px;
-    }
+    margin: 10px 0px;
 }

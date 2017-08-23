@@ -207,7 +207,7 @@ if (!$errEmail) {
                                 <div class="input-group">
                                     <p>Get the latest scoop! Sign up for our newsletter today!</p>
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" placeholder="Email Address" class="form-control res" id="email" required value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                                    <input type="email" placeholder="Email Address" class="form-control res" id="email" required="required" value="<?php echo htmlspecialchars($_POST['email']); ?>">
                                     <?php echo "<p class='text-danger'>$errEmail</p>";?>
                                     <span class="input-group">
                             <button name="submit" type="submit" value="Submit"><i class="fa fa-send"></i></button>
@@ -220,7 +220,7 @@ if (!$errEmail) {
                                 <div class="input-group">
                                     <p>Get the latest scoop! Sign up for our newsletter today!</p>
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" placeholder="Email Address" class="form-control" id="email" required value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                                    <input type="email" placeholder="Email Address" class="form-control" id="email" required="required" value="<?php echo htmlspecialchars($_POST['email']); ?>">
                                     <?php echo "<p class='text-danger'>$errEmail</p>";?>
                                     <span class="input-group">
                             <button name="submit" type="submit" value="Submit"><i class="fa fa-send"></i></button>

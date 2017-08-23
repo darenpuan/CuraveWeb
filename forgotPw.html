@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="device-width, initial-scale=1">
+
     <!--
     <meta name="description" content="">
     <meta name="author" content="">
@@ -15,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,400" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/forgotPw.css">
+
     <title>Curave</title>
 </head>
 
@@ -37,7 +39,7 @@
                     <div class="collapse navbar-collapse navbar-right" id="">
                         <ul class="nav navbar-nav">
                             <li><a href="#about">ABOUT</a></li>
-                            <li><a href="index.html #howItWorks">HOW IT WORKS</a></li>
+                            <li><a href="index.html#howItWorks">HOW IT WORKS</a></li>
                             <li><a href="#competitions">VIEW COMPETITIONS</a></li>
                             <li><a href="login.html" class="btn button_login padding">LOGIN</a></li>
                             <li><a href="register.html" class="btn button_register">REGISTER</a></li>
@@ -52,92 +54,29 @@
     <section id="hero">
         <div class="container">
             <div class="section-header">
-                <h1>EARN MONEY</h1>
-                <h1><small>PLAYING YOUR FAVORITE GAMES</small></h1>
-                <h4>PLAY COMPETITIONS. WIN GAMES. EARN REAL CASH</h4>
+                <h2>FORGOT YOUR PASSWORD?</h2>
             </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-sm-6 dotaLogo">
-                    <img src="/assets/img/logo-dota2-min.png " alt=" ">
-                </div>
-                <div class="col-sm-6 overwatchLogo">
-                    <img src="/assets/img/logo-overwatch-min.png " alt=" ">
-                    <p>COMING SOON</p>
-                </div>
+            <div class="col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+                <p>Simply type in the email address registered with us, and we'l send you instructions on resetting your password.</p>
+
+            </div>
+            <div class="login col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                <form method="post" style="text-align: center;">
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" name="user" placeholder="email address" required="required" class="input-txt" />
+                    </div>
+                    <div class="login-footer">
+                        <button type="submit" class="btn button_login3">RESET</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login col-xs-12">
+                <a href="login.html">Back to login</a>
             </div>
         </div>
     </section>
     <!--End hero-->
-
-    <!--howItWorks-->
-    <section id="howItWorks">
-        <div class="container">
-            <div class="section-header">
-                <h2>HOW IT WORKS</h2>
-            </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-sm-4">
-                    <div class="img-circle">
-                        <img src="/assets/img/icon-cup2x-min.png" alt="">
-                    </div>
-                    <h5>JOIN A COMPETITION</h5>
-                    <p>There's competition for all skill levels, <br class="hidden-xs hidden-sm">don't worry we'hv got you covered.</p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-circle">
-                        <img src="/assets/img/icon-podium2x-min.png" alt="">
-                    </div>
-                    <h5>START PLAYING</h5>
-                    <p>We keep track of your match statistics <br class="hidden-xs hidden-sm">and with out unique scoring structure. We <br class="hidden-xs hidden-sm">will assign you a ranking based on your <br class="hidden-xs hidden-sm">performance and you will be able to earn <br class="hidden-xs hidden-sm">a portion of the prize pool!</p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-circle">
-                        <img src="/assets/img/icon-coins2x-min.png" alt="">
-                    </div>
-                    <h5>WIN CASH</h5>
-                    <p>Have fun and play! Win <img src="/assets/img/curavecoin-small.png" alt=""> Curave Coins <br class="hidden-xs hidden-sm"> to use in more competitions, or cash <br class="hidden-xs hidden-sm">them out as real money. GG EZ!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End howItWorks-->
-
-    <!--whyCurave-->
-    <section id="whyCurave">
-        <div class="container">
-            <div class="section-header">
-                <h2>WHY CURAVE</h2>
-            </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-sm-4">
-                    <div class="col-md-12">
-                        <img src="/assets/img/icon-fists-min.png" alt="">
-                        <h5>FOR FAME &amp; GLORY</h5>
-                        <p>Create a name for yourselft on Curave playing the games you love. Make all your friends and followers jelly when they see you #1 on our leaderboards.</p><br class="hidden-xs hidden-lg">
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="col-md-12">
-                        <img src="/assets/img/icon-wallet-min.png" alt="">
-                        <h5>FOR REAL MONEY</h5>
-                        <p>
-                            Because you don't have to be a professional to earn money from gaming, join us and you will believe it. Play games, earn Curave Coins and convert them to real money!
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="col-md-12">
-                        <img src="/assets/img/icon-target-min.png" alt="">
-                        <h5> SKILL-BASED MATCHMAKING</h5>
-                        <p>
-                            To ensure a fair and fun gaming environment for all, we utilize your MMR to group players with your similar skill level! <br> <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End whyCurave-->
     <!--footer-->
     <footer id="myFooter">
         <div class="container">
