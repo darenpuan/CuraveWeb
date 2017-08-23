@@ -218,10 +218,17 @@
 .signup a {
     color: white;
 }
+#my-signin2 {
+    margin-left: 20px;
+}
 @media screen and (max-width:768px) {
     .fb-login-button,
     #my-signin2 {
         float: left;
+    }
+    
+    #my-signin2 {
+        margin-left: 0px;
     }
     
     .fb,
