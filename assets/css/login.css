@@ -218,6 +218,8 @@
 .signup a {
     color: white;
 }
+
+/*
 #my-signin2 {
     margin-left: 20px;
 }
@@ -236,6 +238,7 @@
         padding: 0px;
     }
 }
+*/
 @media screen and (max-width:301px) {
     .divider {
         margin-left: 0px;
