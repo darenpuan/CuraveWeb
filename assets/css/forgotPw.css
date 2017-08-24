@@ -50,9 +50,9 @@
 }
 
 .fa-user {
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 10px;
-    background: -webkit-linear-gradient(#833AB1, #6160C9);
+    background: -webkit-linear-gradient(#732f8b, #3772b6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -75,11 +75,11 @@
 }
 
 .input-txt:focus {
-    border-bottom: linear-gradient(to bottom left, #833AB1 0%, #833AB1 50%, #6160C9 51%, #6160C9 100%);
+    border-bottom: linear-gradient(to bottom left, #732f8b 0%, #732f8b 50%, #3772b6 51%, #3772b6 100%);
 }
 
 .button_login3 {
-    border: 1px solid #642c87;
+    border: 1px solid #732f8b;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
@@ -92,14 +92,14 @@
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
     font-weight: bold;
     color: #FFFFFF;
-    background-color: #833AB1;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#833AB1), to(#6160C9));
-    background-image: -webkit-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -moz-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -ms-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -o-linear-gradient(top, #833AB1, #6160C9);
-    background-image: linear-gradient(to bottom left, #833AB1, #6160C9);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#833AB1, endColorstr=#6160C9);
+    background-color: #732f8b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#732f8b), to(#3772b6));
+    background-image: -webkit-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -moz-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -ms-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -o-linear-gradient(top, #732f8b, #3772b6);
+    background-image: linear-gradient(to bottom left, #732f8b, #3772b6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#732f8b, endColorstr=#3772b6);
 }
 
 .button_login3:hover {

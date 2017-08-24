@@ -268,9 +268,9 @@ section h3 {
 .button_login {
     /*background: transparent;*/
     border: 1px solid transparent;
-    border-image: linear-gradient(to bottom left, #833AB1 0%, #833AB1 50%, #6160C9 51%, #6160C9 100%);
+    border-image: linear-gradient(to bottom left, #732f8b 0%, #732f8b 50%, #3772b6 51%, #3772b6 100%);
     border-image-slice: 1;
-    background: -webkit-linear-gradient(#6160C9, #833AB1);
+    background: -webkit-linear-gradient(#3772b6, #732f8b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -298,14 +298,14 @@ section h3 {
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
     font-weight: bold;
     color: #FFFFFF;
-    background-color: #833AB1;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#833AB1), to(#6160C9));
-    background-image: -webkit-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -moz-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -ms-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -o-linear-gradient(top, #833AB1, #6160C9);
-    background-image: linear-gradient(to bottom left, #833AB1, #6160C9);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#833AB1, endColorstr=#6160C9);
+    background-color: #732f8b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#732f8b), to(#3772b6));
+    background-image: -webkit-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -moz-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -ms-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -o-linear-gradient(top, #732f8b, #3772b6);
+    background-image: linear-gradient(to bottom left, #732f8b, #3772b6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#732f8b, endColorstr=#3772b6);
 }
 
 .button_register:hover {
@@ -418,14 +418,14 @@ section h3 {
 #myFooter .fa-instagram:hover,
 #myFooter .fa-twitch:hover {
     border: 1px solid transparent;
-    background-color: #833AB1;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#833AB1), to(#6160C9));
-    background-image: -webkit-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -moz-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -ms-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -o-linear-gradient(top, #833AB1, #6160C9);
-    background-image: linear-gradient(to bottom left, #833AB1, #6160C9);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#833AB1, endColorstr=#6160C9);
+    background-color: #732f8b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#732f8b), to(#3772b6));
+    background-image: -webkit-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -moz-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -ms-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -o-linear-gradient(top, #732f8b, #3772b6);
+    background-image: linear-gradient(to bottom left, #732f8b, #3772b6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#732f8b, endColorstr=#3772b6);
 }
 
 #myFooter form {
@@ -448,14 +448,14 @@ section h3 {
 }
 
 #myFooter form button {
-    background-color: #833AB1;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#833AB1), to(#6160C9));
-    background-image: -webkit-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -moz-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -ms-linear-gradient(top, #833AB1, #6160C9);
-    background-image: -o-linear-gradient(top, #833AB1, #6160C9);
-    background-image: linear-gradient(to bottom left, #833AB1, #6160C9);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#833AB1, endColorstr=#6160C9);
+    background-color: #732f8b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#732f8b), to(#3772b6));
+    background-image: -webkit-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -moz-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -ms-linear-gradient(top, #732f8b, #3772b6);
+    background-image: -o-linear-gradient(top, #732f8b, #3772b6);
+    background-image: linear-gradient(to bottom left, #732f8b, #3772b6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#732f8b, endColorstr=#3772b6);
     border: none;
 }
 

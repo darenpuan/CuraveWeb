@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <!--    <meta name="google-signin-client_id" content="1056910213503-u6d6vv7b2od2q2q299gc9lju35r7dkao.apps.googleusercontent.com ">-->
+
+    <!--
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <!--    <script src="https://apis.google.com/js/platform.js" async defer></script>-->
+    <!--    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>-->
+    <title>Curave</title>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1492694241032394";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--header-->
+    <header class="site-header" role="banner">
+        <div class="navbar-wrapper">
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/logo-min.png" alt="Curave"></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="index.html#howItWorks">HOW IT WORKS</a></li>
+                            <li><a href="#competitions">VIEW COMPETITIONS</a></li>
+                            <li><a href="login.html" class="btn button_login padding">LOGIN</a></li>
+                            <li><a href="register.html" class="btn button_register">REGISTER</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End header-->
+    <!--hero-->
+    <section id="hero">
+        <div class="container">
+            <div class="section-header">
+                <h2>RESGISTER</h2>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                <div class="divider">
+                    <div class="fb">
+                        <div class="fb-login-button" data-width="240" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                    </div>
+                    <hr class="left" />OR
+                    <hr class="right" />
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                <div class="login">
+                    <form method="post" style="text-align: center;">
+                        <div class="row">
+                            <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px;">
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" name="user" placeholder="First name" required="required" class="input-txt" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6" style="padding-left: 5px; padding-right: 0px;">
+                                <div class="form-group">
+                                    <input type="text" name="user" placeholder="Last name" required="required" class="input-txt" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email address" required="required" class="input-txt" />
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-user-circle"></i>
+                            <input type="text" name="username" placeholder="Username" required="required" class="input-txt" />
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-key"></i>
+                            <input type="password" name="password" placeholder="Password" required="required" class="input-txt" />
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-key"></i>
+                            <input type="password" name="cfmpassword" placeholder="Repeat Password" required="required" class="input-txt" />
+                        </div>
+                        <div class="col-sm-6" style="padding-left: 0px;padding-right: 5px;">
+                            <div class="form-group">
+                                <i class="fa fa-birthday-cake"></i>
+                                <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
+                                <option value="na">Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3" style="padding-left: 5px;padding-right: 5px;">
+                            <div class="form-group">
+                                <select name="day" id="day">
+                                <option value="na">Day</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3" style="padding-left: 5px; padding-right: 5px;">
+                            <div class="form-group">
+                                <select name="year" id="year">
+                                <option value="na">Year</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="login-footer">
+                            <button type="submit" class="btn button_register2">REGISTER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="login col-xs-12">
+                <a href="login.html">I already have an account</a>
+            </div>
+        </div>
+    </section>
+    <!--End hero-->
+    <!--footer-->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-2 col-md-2">
+                    <h5>ABOUT</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <h5>HELP</h5>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Rules &amp; Scoring</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <h5>MORE</h5>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="footer-social">
+                        <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-icons"><i class="fa fa-twitch"></i></a>
+                    </div>
+                    <div class="hidden-sm hidden-xs">
+                        <form action="#" method="post" class="form-inline">
+                            <div class="input-group">
+                                <p>Get the latest scoop! Sign up for our newsletter today!</p>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" placeholder="Email Address" class="form-control res" id="email" required="required">
+                                <span class="input-group">
+                            <button><i class="fa fa-send"></i></button>
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+                    <center class="hidden-lg hidden-md">
+                        <form action="#" method="post" class="form-inline">
+                            <div class="input-group">
+                                <p>Get the latest scoop! Sign up for our newsletter today!</p>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" placeholder="Email Address" class="form-control" id="email" required="required">
+                                <span class="input-group">
+                            <button><i class="fa fa-send"></i></button>
+                            </span>
+                            </div>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2017 Curave. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!--End footer-->
+</body>
+<script language="JavaScript" type="text/javascript">
+    function changeDate(i) {
+        var e = document.getElementById('day');
+        while (e.length > 0)
+            e.remove(e.length - 1);
+        var j = -1;
+        if (i == "na")
+            k = 0;
+        else if (i == 2)
+            k = 28;
+        else if (i == 4 || i == 6 || i == 9 || i == 11)
+            k = 30;
+        else
+            k = 31;
+        while (j++ < k) {
+            var s = document.createElement('option');
+            var e = document.getElementById('day');
+            if (j == 0) {
+                s.text = "Day";
+                s.value = "na";
+                try {
+                    e.add(s, null);
+                } catch (ex) {
+                    e.add(s);
+                }
+            } else {
+                s.text = j;
+                s.value = j;
+                try {
+                    e.add(s, null);
+                } catch (ex) {
+                    e.add(s);
+                }
+            }
+        }
+    }
+    y = 1993;
+    while (y-- > 1940) {
+        var s = document.createElement('option');
+        var e = document.getElementById('year');
+        s.text = y;
+        s.value = y;
+        try {
+            e.add(s, null);
+        } catch (ex) {
+            e.add(s);
+        }
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+</html>
