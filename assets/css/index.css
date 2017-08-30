@@ -165,6 +165,18 @@
     background: url(/assets/img/tile.jpg) top left repeat;
 }
 
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
 .button_subscribe {
     border: 1px solid #642c87;
     -webkit-border-radius: 0px;
