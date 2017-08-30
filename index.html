@@ -39,8 +39,12 @@
                             <li><a href="#about">ABOUT</a></li>
                             <li><a href="index.html #howItWorks">HOW IT WORKS</a></li>
                             <li><a href="#competitions">VIEW COMPETITIONS</a></li>
-                            <li><a href="login.html" class="btn button_login padding">LOGIN</a></li>
-                            <li><a href="register.html" class="btn button_register">REGISTER</a></li>
+                            <li><a type="button" data-toggle="modal" data-target="#myModal" class="btn button_register">REGISTER</a></li>
+
+                            <!--
+<li><a href="login.html" class="btn button_login padding">LOGIN</a></li>
+<li><a href="register.html" class="btn button_register">REGISTER</a></li>
+-->
                         </ul>
                     </div>
                 </div>
@@ -205,10 +209,32 @@
         </div>
     </footer>
     <!--End footer-->
+    <!--modal window-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Be the first to know when we launch.</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Simply enter your email!</p>
+                    <form role="form" class="form-inline" style="text-align: center;">
+                        <div class="form-group">
+                            <label for="subscribe-email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="subscribe-mail" placeholder="Email" required>
+                        </div>
+                        <input type="submit" class="btn button_subscribe" value="Subscribe">
+                    </form>
+                    <p class="padding"><small>By providing your email you consent to receiving (very) occasional promotion emails &amp; newsletters.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End modal window-->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
 </html>
