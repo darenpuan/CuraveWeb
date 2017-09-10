@@ -67,8 +67,8 @@
     text-align: center;
 }
 
-#howItWorks .section-header {
-    margin-top: 7%;
+#howItWorks .container {
+    margin-top: 8%;
 }
 
 #howItWorks .row {
@@ -122,8 +122,8 @@
     background-position: center;
 }
 
-#whyCurave .section-header {
-    margin-top: 7%;
+#whyCurave .container {
+    margin-top: 8%;
 }
 
 #whyCurave .row {
