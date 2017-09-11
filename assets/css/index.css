@@ -39,13 +39,21 @@
     margin-top: 10%;
 }
 
-.dotaLogo,
-.overwatchLogo {
+.dotaLogo {
     background-color: white;
-    height: 100px;
+    height: 105px;
     width: 230px;
     padding: 30px;
     padding-bottom: 0px;
+    text-align: center;
+}
+
+.overwatchLogo {
+    background-color: white;
+    height: 105px;
+    width: 230px;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
 }
 
