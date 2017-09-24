@@ -203,7 +203,7 @@ if (!$errEmail) {
                             <a href="#" class="social-icons"><i class="fa fa-twitch"></i></a>
                         </div>
                         <div class="hidden-sm hidden-xs">
-                            <form action="#" method="post" class="form-inline">
+                            <form action="index.php" method="post" class="form-inline">
                                 <div class="input-group">
                                     <p>Get the latest scoop! Sign up for our newsletter today!</p>
                                     <label for="email" class="sr-only">Email</label>
@@ -216,7 +216,7 @@ if (!$errEmail) {
                             </form>
                         </div>
                         <center class="hidden-lg hidden-md">
-                            <form action="#" method="post" class="form-inline">
+                            <form action="index.php" method="post" class="form-inline">
                                 <div class="input-group">
                                     <p>Get the latest scoop! Sign up for our newsletter today!</p>
                                     <label for="email" class="sr-only">Email</label>
