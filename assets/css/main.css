@@ -185,7 +185,6 @@ section h3 {
 }
 */
 
-
 /*NavBar*/
 
 .navbar-default {
@@ -220,29 +219,39 @@ section h3 {
     }
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
     font-size: 14px;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus {
     font-weight: bold;
     color: white;
     background-color: transparent;
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
     font-weight: bolder;
     color: #ddd9d9;
     background-color: transparent;
+}
+
+a.navbar-brand {
+    padding-top: 0px;
+}
+
+
+.navbar-brand > img {
+    display: block;
+    width: 180px;
 }
 
 @media screen and (min-width:768px) {
@@ -475,7 +484,7 @@ section h3 {
 
 @media screen and (min-width:768px) {
     #myFooter form input {
-        width: 270px;
+        width: 260px;
     }
 }
 

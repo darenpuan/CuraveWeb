@@ -1,7 +1,7 @@
 /*Hero*/
 
 #hero {
-    background: url(../img/loginBg.jpg) no-repeat fixed;
+    background: url(/assets/img/loginBg.jpg) no-repeat fixed;
     background-size: cover;
     min-height: 100%;
     background-position: top;

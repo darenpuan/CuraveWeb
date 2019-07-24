@@ -1,5 +1,10 @@
 body {
     background-color: #252930;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 
@@ -80,7 +85,61 @@ body {
 .badge {
     position: absolute;
     top: 10px;
-    left: 25px;
+    left: 30px;
     font-weight: 300px;
     padding: 2px 5px;
+    background-color: red;
+}
+
+.navbar-profile {
+    min-width: 250px;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: #393c43
+}
+
+.navbar-profile-session {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+.dropdown-menu {
+    padding: 0px;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.border-menu a {
+    border-bottom: 1px solid #393c43;
+}
+
+@media screen and (max-width:991px) {
+    .profile-img {
+        width: 50%;
+    }
+}
+
+}
+
+/***********************To Delete***********************/
+
+#hero {
+    height: 100%;
+}
+
+
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    padding: 0px;
+    margin: 0px;
 }
